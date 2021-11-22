@@ -1,0 +1,14 @@
+<div class="row" *ngIf="hero && hero.name">
+    <div class="col-10">
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon1"> Nombre </span>
+            <input [(ngModel)]="hero.name" class="form-control" placeholder="Nombre" />
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon1"> Id </span>
+            <input [(ngModel)]="hero.id" class="form-control" placeholder="Id" />
+        </div>
+    </div>
+</div>
